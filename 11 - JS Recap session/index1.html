@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title> Dispaly table  </title>
+
+    <script>
+        function displayTable(){
+            // Hard debugger - comment - two forward slashes  
+            var oNumber = document.getElementById("idInput");
+            var oValue  = oNumber.value;
+            alert("Entered value is "+oValue);
+            //Loop used to print table matrix
+            for(i=0; i<10 ; i++){
+                console.log(oValue+" * "+i+" = "+ (i * oValue) );
+            }
+        }
+
+        function changeBackgroundColor(){
+            var oRef = document.getElementById("idBackGround");
+            oRef.style.backgroundcolor="green";
+        }
+
+    </script>
+
+
+</head>
+
+<body style="background-color: yellow;"id="idBackGround">
+    <input id="idInput"/>
+    <button onclick="displayTable()"> Click here </button>
+    <button onclick="changeBackgroundColor()"> Change BackGround Color </button>
+
+</body>
+</html>

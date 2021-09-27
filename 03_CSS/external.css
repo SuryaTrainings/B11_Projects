@@ -13,4 +13,9 @@
 
            #special{
                color:blue
-           }            
+           }  
+           
+           #priority
+           {
+               color: red !important;  
+           } 
