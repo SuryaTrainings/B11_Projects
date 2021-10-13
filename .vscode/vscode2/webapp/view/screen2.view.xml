@@ -1,0 +1,36 @@
+<mvc:View controllerName="home.controller.screen2"
+      xmlns:core="sap.ui.core" 
+      xmlns:commons="sap.suite.ui.commons" 
+      xmlns = "sap.m"
+      xmlns:mvc = "sap.ui.core.mvc"
+      xmlns:ui = "sap.ui"
+      xmlns:form = "sap.ui.layout.form" >
+
+
+<form:SimpleForm editable="true">
+    <core:Title icon="sap-icon://customer" 
+        text="Employee details"></core:Title>
+    <form:content>
+        <Label text="Emp id" ></Label>
+        <Input id="idEmpId" width="20%"></Input>
+        
+        <Label text="Emp Name"></Label>
+        <Input id="idEmpName" width="40%"></Input>
+        
+        <Label text="Salary"></Label>
+        <Input id="idEmpSalary" width="20%"></Input>
+        
+        <Label text="Emp Currency"></Label>
+        <Input id="idEmpCurrency" width="20%"></Input>
+        
+        <Label text="Emp DOJ"></Label>
+        <Input id="idEmpDOJ" width="30%"></Input>
+
+        <Button text="Reload" press="onReload"  ></Button>
+    </form:content>
+</form:SimpleForm>
+<Button id="idBtn1" press="onApprove" type="Accept" icon="sap-icon://accept" text="Approve"></Button>
+
+<Button id="idBtn2" press="onReject" type="Reject" icon="sap-icon://decline" text="Reject" ></Button>
+
+</mvc:View>      
