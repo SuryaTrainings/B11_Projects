@@ -7,34 +7,29 @@
     <script 
             src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js" 
             data-sap-ui-theme="sap_belize"
-            data-sap-ui-libs="sap.m"
-            data-sap-ui-compatVersion="edge" 
+            data-sap-ui-libs="sap.m" 
             data-sap-ui-resourceroots='{
                                         "home": "./"
                                     }'
     >
-
             </script>
 
     <script>
-        var oView1 = new sap.ui.view({
-            viewName: "home.view.screen1",
-            type: "JS",
-            id:"idJS"
 
+        sap.ui.getCore().attachInit(function(){
+            var oBtn = new sap.m.Button({
+                text: "Display date"
+            });
+
+            oBtn.attachPress(function(){
+                sap.ui.require(["sap/m/MessageToast"], function(m){
+                    m.show("Logic under progress!");
+                });
+            });
+
+            oBtn.placeAt("idDiv1");
         });
 
-        
-        var oView2 = new sap.ui.view({
-            viewName: "home.view.screen2",
-            type: "XML",
-            id:"idXML"
-
-        });
-
-        oView1.placeAt("idDiv1");
-
-        oView2.placeAt("idDiv2");
     </script>
 
 

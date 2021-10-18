@@ -1,7 +1,7 @@
 sap.ui.define([
    "sap/ui/core/mvc/Controller",
    "sap/ui/model/json/JSONModel",
-   "home/model/models"
+   "home/model/model"
 ], function(Controller, JSONModel, models ) {
     'use strict';
 
@@ -10,20 +10,8 @@ sap.ui.define([
         onInit: function(){
             var oView = this.getView();
 
-            //1. Create sample JSON Data
-            var dJSON = {
-                "student":{
-                    "name" : "Mr ABC",
-                    "detp" : "CES",
-                    "grade": "A",
-                    "fee"  : "25000",
-                    "joining" : "21-09-2021",
-                    "id": "S0008",
-                    "curr":"USD" 
-                }
-            };
-            //2. Create model object
-            var oModel = new JSONModel(dJSON);
+            //2. call created model
+            var oModel =models.createJSONModel();
             //3. Set model to View
 
             this.getView().setModel(oModel);

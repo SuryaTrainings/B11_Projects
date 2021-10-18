@@ -5,7 +5,7 @@
     <core:Title icon="sap-icon://customer" text="Employee details"/>
     <form:content>
         <Label text="Emp id"/>
-        <Input id="idEmpId" width="20%" value="{/student/id}"/>
+        <Input id="idEmpId" width="20%" value="{/student/id}" enabled="{/student/edit}"/>
         
         <Label text="Emp Name"/>
         <Input id="idEmpName" width="40%" value="{path: '/student/name'}"/>
