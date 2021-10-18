@@ -7,7 +7,7 @@
 
         <f:Form >
             <f:title><core:Title  text="Address data"></core:Title></f:title>
-            <f:layout><f:ResponsiveLayout ></f:ResponsiveLayout></f:layout>
+            <f:layout><f:GridLayout singleColumn="true"></f:GridLayout></f:layout>
             <f:formContainers>
                 <f:FormContainer >
                     <f:title><core:Title text="Person data"></core:Title></f:title>
@@ -33,8 +33,34 @@
                                 </DatePicker>
                             </f:fields>
                         </f:FormElement>
-                    </f:formElements>
+                    </f:formElements>                
+                </f:FormContainer>
                 
+                <f:FormContainer >
+                    <f:title><core:Title text="Person data"></core:Title></f:title>
+                    <f:formElements>
+                        <f:FormElement >
+                            <f:label><Label text="Name"></Label></f:label>
+                            <f:fields>
+                                <Input value="John"></Input>
+                                <Input value="Doe"></Input>
+                            </f:fields>
+                        </f:FormElement>
+                        <f:FormElement >
+                            <f:layoutData>
+                            <layout:GridData span="L1 M2 S4"></layout:GridData>
+                            </f:layoutData>
+
+                            <f:label><Label text="Date of birth"></Label></f:label>
+                            <f:fields>
+                                <DatePicker value="1070-01-01">
+                                    <layoutData>
+                                        <layout:ResponsiveFlowLayoutData weight="2"></layout:ResponsiveFlowLayoutData>
+                                    </layoutData>
+                                </DatePicker>
+                            </f:fields>
+                        </f:FormElement>
+                    </f:formElements>                
                 </f:FormContainer>
             </f:formContainers>
         </f:Form>
