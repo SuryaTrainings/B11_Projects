@@ -8,6 +8,7 @@
                                   "id"      : "SID-0045",
                                   "dept"    : "ECE",
                                   "fee"     : 45000,
-                                  "edit"    : true
+                                  "edit"    : true,
+                                  "marks"   : 200   
 	                            }   
                             }

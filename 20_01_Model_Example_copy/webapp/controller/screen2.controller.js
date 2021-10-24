@@ -22,16 +22,17 @@ sap.ui.define(
                                   "id"      : "SID-0045",
                                   "dept"    : "ECE",
                                   "fee"     : 45000,
-                                  "edit"    : true
+                                  "edit"    : true,
+                                  "marks"   : 467
 	                            }   
                             };
             // Create model object 
             var oJsonModel = new JSONModel(oJSONData);
-            
+            oJsonModel.setDefaultBindingMode("OneWay");
             // Load / Set model & 
             // Make aware of model to View
             this.getView().setModel(oJsonModel);                
- 
+                            
             // Set path to input / screen fields - binding 
 
 
@@ -65,6 +66,11 @@ sap.ui.define(
             this.getView().byId("idSGrade").setValue("A");
             this.getView().byId("idSFee").setValue("36000 INR");
             
+        },
+
+        onJSONData: function(){
+            var oInfo = this.getView().getModel();
+            console.log(oInfo);
         }
 
 

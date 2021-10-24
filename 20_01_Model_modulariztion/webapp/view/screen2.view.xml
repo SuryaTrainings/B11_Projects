@@ -10,12 +10,12 @@
 
    <Label text="Student name"></Label>
    <!-- 1st type of property binding -->
-   <Input id='idSName' placeholder="Student Name" width="75%" value="{/student/name}" editable="{/student/edit}"></Input> 
+   <Input id='idSName' placeholder="Student Name" width="75%" value="{person2>/student/name}" editable="{/student/edit}"></Input> 
 
    
    <Label text="Student Id"></Label>
    <!-- 2nd type of property binding -->
-   <Input id="idSId" placeholder="Student Id" width="40%" value="{path: '/student/id'}" editable="{/student/edit}"></Input> 
+   <Input id="idSId" placeholder="Student Id" width="40%" value="{path: 'person2>/student/id'}" editable="{/student/edit}"></Input> 
 
    
    <Label text="Student Dept"></Label>
@@ -29,7 +29,9 @@
 
    
    <Label text="Paid fee"></Label>
-   <Input id="idSFee" placeholder="Paid fee" width="40%" value="{/student/fee}" editable="{/student/edit}"></Input> 
+   <Input id="idSFee" placeholder="Paid fee" width="40%" value="{/student/fee}" 
+   
+   editable="{= '{/student/fee}' >= 5000 ? true : flase }"></Input> 
 
     <Button text="Display Student Details " icon="sap-icon://study-leave" press="onMessage"></Button>
 <Button text="Display Message " icon="sap-icon://information" press="onMessage"></Button>

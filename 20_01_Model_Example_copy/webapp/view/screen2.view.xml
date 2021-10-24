@@ -31,9 +31,13 @@
    <Label text="Paid fee"></Label>
    <Input id="idSFee" placeholder="Paid fee" width="40%" value="{/student/fee}" editable="{/student/edit}"></Input> 
 
-    <Button text="Display Student Details " icon="sap-icon://study-leave" press="onMessage"></Button>
-<Button text="Display Message " icon="sap-icon://information" press="onMessage"></Button>
+    <Label text="Student Status"></Label>
+   <Input id="idSStatus" placeholder="Status" width="40%" value="{= ${/student/marks} >= 300 ? ${/student/marks} : 'Fail' }" ></Input> 
 
+
+    <Button text="Display Student Details " icon="sap-icon://study-leave" press="onMessage"></Button>
+    <Button text="Display Message " icon="sap-icon://information" press="onMessage"></Button>
+    <Button text="Dynaimc Info" press="onJSONData"></Button>
 </form:SimpleForm>
 
 

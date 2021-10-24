@@ -13,14 +13,22 @@ sap.ui.define(
         onInit: function(){
 
             debugger;
+
+            //Default Model
             // Load / Set model &
-            var oCModel = oModel.createJSONModel();
-            
+            var oCModel = oModel.createJSONModel("model/modelData/studentInfo.json");
             // Make aware of model to View
-            this.getView().setModel(oCModel);                
+            this.getView().setModel(oCModel); 
+            
+
+            //Named Model 
+            var oCModel = oModel.createJSONModel("model/modelData/studentInfo2.json");
+            // Make aware of model to View
+            this.getView().setModel(oCModel, "person2"); 
+            
+            
  
             // Set path to input / screen fields - binding 
-
 
             // 3rd type of property binding 
             //step - 1 : get ref of screen filed 
