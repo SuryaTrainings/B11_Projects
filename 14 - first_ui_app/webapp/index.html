@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Bootstrap area -->
+        <script
+            id="sap-ui-bootstrap"
+            src="https://sapui5.hana.ondemand.com/1.94.0/resources/sap-ui-core.js"
+            data-sap-ui-theme = "sap_fiori_3_dark"
+            data-sap-ui-libs  = "sap.m"
+            data-sap-ui-resourceroots='{
+                "home" : "./" }'       
+            > 
+        </script>
+</script>
+
+
+
+        <!-- UI Area  -->
+        <script>
+            var oBtn = new sap.m.Button("idBtn", {
+                text: "First UI5 App"
+            });
+
+            oBtn.placeAt("view1");
+        </script>
+    </head>
+    <body id="content">
+        <!-- Application Area -->
+        <div id="view1">
+
+        </div>
+    </body>
+</html>

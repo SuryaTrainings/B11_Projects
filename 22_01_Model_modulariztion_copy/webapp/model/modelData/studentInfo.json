@@ -1,0 +1,65 @@
+{ "student" : 
+                            	{ "name"    : "Sagar",
+                            	  "class"   : "12th",
+                            	  "grade"   : "A+",
+	                              "city"    : "Bangalore",
+                                  "phone"   : 123123,
+                                  "B.Grp"   : "B+",
+                                  "id"      : "SID-0045",
+                                  "dept"    : "ECE",
+                                  "fee"     : 45000,
+                                  "edit"    : true
+                                },
+                                
+                                "studentTab": [
+                                    {
+                                        "SNO": 1,
+                                        "SName" : "Mr A",
+                                        "SID" : "S0001",
+                                        "SClass" : 10,
+                                        "Marks": 450,
+                                        "rating": 4,
+                                        "gender": "M"
+                                    },{
+                                        "SNO": 2,
+                                        "SName" : "Mr C",
+                                        "SID" : "S0003",
+                                        "SClass" : 10,
+                                        "Marks": 490,
+                                        "rating": 1,
+                                        "gender": "M"
+                                    },{
+                                        "SNO": 3,
+                                        "SName" : "Mr D",
+                                        "SID" : "S0006",
+                                        "SClass" : 10,
+                                        "Marks": 460,
+                                        "rating": 4,
+                                        "gender": "M"
+                                    },{
+                                        "SNO": 4,
+                                        "SName" : "Mr E",
+                                        "SID" : "S0007",
+                                        "SClass" : 10,
+                                        "Marks": 400,
+                                        "rating": 2,
+                                        "gender": "O"
+                                    },{
+                                        "SNO": 5,
+                                        "SName" : "Mr F",
+                                        "SID" : "S0008",
+                                        "SClass" : 10,
+                                        "Marks": 350,
+                                        "rating": 3,
+                                        "gender": "F"
+                                    },{
+                                        "SNO": 6,
+                                        "SName" : "Mr G",
+                                        "SID" : "S0009",
+                                        "SClass" : 10,
+                                        "Marks": 300,
+                                        "rating": 4,
+                                        "gender": "F"
+                                    }
+                                ]
+                            }

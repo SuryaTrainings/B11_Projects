@@ -1,0 +1,13 @@
+{ "student" : 
+                            	{ "name"    : "Ramanji",
+                            	  "class"   : "10th",
+                            	  "grade"   : "A",
+	                              "city"    : "Bangalore",
+                                  "phone"   : 123123,
+                                  "B.Grp"   : "AB+",
+                                  "id"      : "SID-0099",
+                                  "dept"    : "Civi",
+                                  "fee"     : 96000,
+                                  "edit"    : false
+	                            }   
+                            }

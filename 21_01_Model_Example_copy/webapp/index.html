@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Bootstrap area  -->
+    <script 
+            src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js" 
+            data-sap-ui-theme="sap_belize"
+            data-sap-ui-libs="sap.m" 
+            data-sap-ui-resourceroots='{
+                                        "home": "./"
+                                    }'
+            data-sap-ui-compatVersion='edge'
+    >
+
+            </script>
+
+    <script>
+        var oView1 = new sap.ui.view({
+            viewName: "home.view.screen1",
+            type: "JS",
+            id:"idJS"
+
+        });
+
+        
+        var oView2 = new sap.ui.view({
+            viewName: "home.view.screen2",
+            type: "XML",
+            id:"idXML"
+
+        });
+
+        oView1.placeAt("idDiv1");
+
+        oView2.placeAt("idDiv2");
+    </script>
+
+
+    </script>
+</head>
+
+<body>
+    <div id="idDiv1"></div>
+    
+    <div id="idDiv2"></div>
+</body>
+
+</html>

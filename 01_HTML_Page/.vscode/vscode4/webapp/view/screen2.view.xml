@@ -1,0 +1,31 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:commons="sap.suite.ui.commons" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:ui="sap.ui" xmlns:form="sap.ui.layout.form" controllerName="home.controller.screen2">
+
+
+<form:SimpleForm editable="true">
+    <core:Title icon="sap-icon://customer" text="Employee details"/>
+    <form:content>
+        <Label text="Emp id"/>
+        <Input id="idEmpId" width="20%" value="{/student/id}" enabled="{/student/edit}"/>
+        
+        <Label text="Emp Name"/>
+        <Input id="idEmpName" width="40%" value="{path: '/student/name'}"/>
+        
+        <Label text="Salary"/>
+        <Input id="idEmpSalary" width="20%"/>
+        
+        <Label text="Emp Currency"/>
+        <Input id="idEmpCurrency" width="20%"/>
+        
+        <Label text="Emp DOJ"/>
+        <Input id="idEmpDOJ" width="30%"/>
+
+        <Button text="Reload" press="onReload"/>
+
+        <ToggleButton xmlns="sap.m" text="Toggle Button" id="button1"/>
+    </form:content>
+</form:SimpleForm>
+<Button id="idBtn1" press="onApprove" type="Accept" icon="sap-icon://accept" text="Approve"/>
+
+<Button id="idBtn2" press="onReject" type="Reject" icon="sap-icon://decline" text="Reject"/>
+
+</mvc:View>

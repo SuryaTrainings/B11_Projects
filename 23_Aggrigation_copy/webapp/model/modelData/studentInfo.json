@@ -1,0 +1,63 @@
+{ "student" : 
+            { "name"    : "Sagar",
+                "class"   : "12th",
+                "grade"   : "A+",
+                "city"    : "Bangalore",
+                "phone"   : 123123,
+                "B.Grp"   : "B+",
+                "id"      : "SID-0045",
+                "dept"    : "ECE",
+                "fee"     : 45000,
+                "edit"    : true
+            },
+   "studentTab" : [
+         {
+        "SNO" : 1,
+        "SId" : "S001",
+        "SName" : "Mr A",
+        "SMarks" : 500,
+        "rating" : 4,
+        "gender" : "M"
+    }, {
+        "SNO" : 2,
+        "SId" : "S002",
+        "SName" : "Mr B",
+        "SMarks" : 250,
+        "rating" : 4,
+        "gender" : "N"
+
+    }, {
+        "SNO" :3,
+        "SId" : "S003",
+        "SName" : "Mr C",
+        "SMarks" : 490,
+        "rating" : 5,
+        "gender" : "O"
+    }, {
+        "SNO" :4,
+        "SId" : "S004",
+        "SName" : "Mr D",
+        "SMarks" : 349,
+        "rating" : 1,
+        "gender" : "M"
+
+
+    }, {
+        "SNO" :5,
+        "SId" : "S005",
+        "SName" : "Mr E",
+        "SMarks" : 490,
+        "rating" : 3,
+        "gender" : "F"
+
+
+    }, {
+        "SNO" :6,
+        "SId" : "S006",
+        "SName" : "Mr F",
+        "SMarks" : 351,
+        "rating" : 1,
+        "gender" : "M"
+
+    }]   
+                            }

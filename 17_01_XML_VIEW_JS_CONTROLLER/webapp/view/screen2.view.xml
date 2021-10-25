@@ -1,0 +1,10 @@
+<mvc:View controllerName="home.controller.screen2"
+      xmlns = "sap.m"
+      xmlns:mvc = "sap.ui.core.mvc"
+      xmlns:ui = "sap.ui">
+
+<Button id="idBtn1" press="onApprove" type="Accept" icon="sap-icon://accept" text="Approve"></Button>
+
+<Button id="idBtn2" press="onReject" type="Reject" icon="sap-icon://decline" text="Reject" ></Button>
+
+</mvc:View>      

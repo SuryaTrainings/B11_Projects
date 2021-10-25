@@ -1,0 +1,13 @@
+{
+                "student":{
+                    "name" : "Mr XYZ",
+                    "detp" : "Mech",
+                    "grade": "A+",
+                    "fee"  : "45000",
+                    "joining" : "21-01-2021",
+                    "id": "S0010",
+                    "curr":"INR", 
+                    "edit":false,
+                    "marks" : 400
+                }
+            }

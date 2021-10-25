@@ -1,0 +1,29 @@
+<mvc:View xmlns:layout="sap.ui.layout"
+          controllerName="home.controller.screen1"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns = "sap.m">
+
+          <layout:VerticalLayout >
+            <Label text="Employee ID"></Label>
+            <Input placeholder="Employee ID"></Input>
+            
+            <Label text="Employee Name"></Label>
+            <Input placeholder="Employee Name"></Input>
+
+            <Label text="Employee Phone no"></Label>
+            <Input placeholder="Employee Phone no"></Input>
+          
+          </layout:VerticalLayout>
+
+          <layout:HorizontalLayout>
+           <Label text="Employee ID"></Label>
+            <Input placeholder="Employee ID"></Input>
+            
+            <Label text="Employee Name"></Label>
+            <Input placeholder="Employee Name"></Input>
+
+            <Label text="Employee Phone no"></Label>
+            <Input placeholder="Employee Phone no"></Input>
+          </layout:HorizontalLayout>
+
+</mvc:View>           

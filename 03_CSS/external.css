@@ -1,0 +1,21 @@
+
+           p{
+               color:red
+           } 
+
+           .selection1{
+            color: green
+           }
+
+           .selection2{
+            color:chocolate
+                       }
+
+           #special{
+               color:blue
+           }  
+           
+           #priority
+           {
+               color: red !important;  
+           } 

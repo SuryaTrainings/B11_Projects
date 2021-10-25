@@ -1,0 +1,12 @@
+{
+                "student":{
+                    "name" : "Mr ABC",
+                    "detp" : "CES",
+                    "grade": "A",
+                    "fee"  : "25000",
+                    "joining" : "21-09-2021",
+                    "id": "S0009",
+                    "curr":"USD", 
+                    "edit":false
+                }
+            }

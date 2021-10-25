@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title> Dispaly table </title>
+
+    <script>
+        
+        function displayTable() {
+            // Hard debugger - comment - two forward slashes  
+            var oNumber = document.getElementById("idInput");
+            var oValue = oNumber.value;
+            alert("Entered value is " + oValue);
+            //Loop used to print table matrix
+            for (i = 0; i < 10; i++) {
+                console.log(oValue + " * " + i + " = " + (i * oValue));
+            }
+        }
+
+        function changeBackgroundColor() {
+
+
+            // 1 - to read input value - get ref of Input field
+            var oInpRef = document.getElementById("idInput");
+
+            //2 - From the refernce get value
+            var oInpValue = oInpRef.value;
+
+            //3 - Pass value to body - CSS - backgroundColor 
+            var oRef = document.getElementById("idBackGround");
+            oRef.style.backgroundColor = oInpValue;
+
+            var oDivRef1 = document.getElementById("showText1");
+            var oDivRef2 = document.getElementById("showText2");
+            oDivRef1.innerText = "Background color changed successfully";
+
+            oDivRef2.innerText = "Background color changed successfully";
+        }
+
+        function validate() {
+            if ("user1" == document.getElementById("uname").value &&
+                "123456" == document.getElementById("pwd").value) {
+                alert("Login success!");
+                
+            } else {
+                alert("Invalid credentials ");
+            }
+        }
+
+
+    </script>
+
+
+</head>
+
+<body style="background-color: chocolate;" id="idBackGround">
+    <input id="idInput" />
+    <button onclick="displayTable()"> Click here </button>
+    <button onclick="changeBackgroundColor()"> Change BackGround Color </button>
+    <div id="showText1"></div>
+    <div id="showText2"></div>
+    <br>
+    <label>User name </label> <input id="uname">
+    <br>
+    <label>Password </label> <input id="pwd">
+    <br>
+    <button onclick="validate()"> Login </button>
+
+</body>
+
+</html>

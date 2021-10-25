@@ -1,0 +1,133 @@
+<mvc:View xmlns:control="sap.gantt.control" xmlns:table="sap.ui.table" xmlns:core="sap.ui.core" controllerName="home.controller.screen2"
+      xmlns = "sap.m"
+      xmlns:mvc = "sap.ui.core.mvc"
+      xmlns:ui = "sap.ui"
+      xmlns:form = "sap.ui.layout.form"
+      >
+
+<form:SimpleForm editable="true">
+   <core:Title text="Student details" icon="sap-icon://study-leave"></core:Title>  
+
+   <Label text="Student name"></Label>
+   <!-- 1st type of property binding -->
+   <Input id='idSName' placeholder="Student Name" width="75%" value="{person2>/student/name}" editable="{/student/edit}"></Input> 
+
+   
+   <Label text="Student Id"></Label>
+   <!-- 2nd type of property binding -->
+   <Input id="idSId" placeholder="Student Id" width="40%" value="{path: 'person2>/student/id'}" editable="{/student/edit}"></Input> 
+
+   
+   <Label text="Student Dept"></Label>
+   <Input id="idSDept" placeholder="Student Dept." width="25%" 
+   
+    editable="{/student/edit}"></Input> 
+
+   
+   <Label text="Student Grade"></Label>
+   <Input id="idSGrade" placeholder="Student Grade" width="25%" value="{/student/grade}" editable="{/student/edit}"></Input> 
+
+   
+   <Label text="Paid fee"></Label>
+   <Input id="idSFee" placeholder="Paid fee" width="40%" value="{/student/fee}" 
+   
+   editable="{= '{/student/fee}' >= 5000 ? true : flase }"></Input> 
+
+    <Button text="Display Student Details " icon="sap-icon://study-leave" press="onMessage"></Button>
+    <Button text="Display Message " icon="sap-icon://information" press="onMessage"></Button>
+
+</form:SimpleForm>
+
+    <table:Table rows="{/studentTab}" alternateRowColors="true" editable="false"
+        enableCellFilter="true" visibleRowCount="5"
+    >
+        <table:columns>
+            <table:Column >
+                <table:label>
+                    <Label text="Seq No"></Label>
+                </table:label>
+                <table:template>
+                    <Text text="{SNO}"></Text>
+                </table:template>
+            </table:Column>
+
+            
+            <table:Column >
+                <table:label>
+                    <Label text="Student Name"></Label>
+                </table:label>
+                <table:template>
+                    <Text text="{SName}"></Text>
+                </table:template>
+            </table:Column>
+
+            
+            <table:Column >
+                <table:label>
+                    <Label text="Student ID"></Label>
+                </table:label>
+                <table:template>
+                    <Text text="{SID}"></Text>
+                </table:template>
+            </table:Column>
+
+            
+            <table:Column >
+                <table:label>
+                    <Label text="Student Class"></Label>
+                </table:label>
+                <table:template>
+                    <Text text="{SClass}"></Text>
+                </table:template>
+            </table:Column>
+
+            
+            <table:Column >
+                <table:label>
+                    <Label text="Student marks"></Label>
+                </table:label>
+                <table:template>
+                    <Text text="{Marks} {= ${Marks} >= 350 ? 'Pass' : 'Fail' }"></Text>
+                </table:template>
+            </table:Column>
+
+            <table:Column width="25%">
+            <table:label>
+            <Label text="Remakrs"></Label>
+            </table:label>
+            <table:template>
+            <Input placeholder="comments"></Input>
+            </table:template>
+            </table:Column>
+
+            <table:Column >
+            <table:label>
+            <Label text="Rating"></Label>
+            </table:label>
+            <table:template>
+            <RatingIndicator value="{rating}"></RatingIndicator>
+            </table:template>
+            </table:Column>
+
+            
+            <table:Column >
+            <table:label>
+            <Label text="Gender"></Label>
+            </table:label>
+            <table:template>
+            <Select selectedKey="{gender}">
+                <items>
+                <core:Item text="Male" key="M"></core:Item>
+                <core:Item text="Female" key="F"></core:Item>
+                <core:Item text="Others" key="O"></core:Item>
+                </items>
+            </Select>
+            </table:template>
+            </table:Column>
+
+
+        </table:columns>
+    </table:Table>
+
+
+</mvc:View>      
