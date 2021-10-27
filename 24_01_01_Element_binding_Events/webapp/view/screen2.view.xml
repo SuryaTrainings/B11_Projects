@@ -7,10 +7,8 @@
       xmlns:form = "sap.ui.layout.form"
       >
 
-
-    <table:Table rows="{/studentTab}" alternateRowColors="true" editable = "false" visibleRowCount="5" selectionMode="Single"
-    rowSelectionChange="onRowSelectionChange" 
-    >
+    <table:Table rows="{/studentTab}" alternateRowColors="true" editable = "false"  visibleRowCount="5"
+    selectionMode="Single" rowSelectionChange="onRowSelectionChange"    >
 
         <table:columns>
             <table:Column >
@@ -99,6 +97,8 @@
     </table:Table>
 
 <form:SimpleForm editable="true" id="idForm">
+
+    <!-- Step - 5 : Map the relative path  -->
    <core:Title text="Student details" icon="sap-icon://study-leave"></core:Title>  
 
    <Label text="Student name"></Label>
@@ -130,6 +130,7 @@
 <Button text="Display Message " icon="sap-icon://information" press="onMessage"></Button>
 
 </form:SimpleForm>
+
 
 
 </mvc:View>      

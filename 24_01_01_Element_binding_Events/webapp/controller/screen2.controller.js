@@ -64,15 +64,18 @@ sap.ui.define(
 
         onRowSelectionChange: function(oEvent){
             debugger;
-            //step - 1 : Get selected row 
-             var oItem = oEvent.getParameter("rowContext");
-            //step - 2 : Get array path of selected row
-             var sPath = oItem.getPath(); 
-            //step - 3 : Get screen element object ref from the view
-            var oForm = this.getView().byId("idForm"); 
-            //step - 4 : bind element - for the dynamic path
-            oForm.bindElement(sPath); 
-        } 
+            console.log(oEvent);
+
+            //Step - 1 : Get the source 
+            var oRow =  oEvent.getParameter("rowContext");
+            //Step - 2 : Get Path / data source 
+            var sPath = oRow.getPath();
+            //Step - 3 : Get Element reference / object refer 
+            var oForm = this.getView().byId("idForm");
+            //Step - 4 : Using bindElement() method - Set Abosultepath to the screen element 
+            oForm.bindElement(sPath);
+            
+        }
 
 
     });

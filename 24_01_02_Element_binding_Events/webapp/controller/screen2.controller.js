@@ -2,9 +2,9 @@ sap.ui.define(
     [
    "sap/ui/core/mvc/Controller",
    "sap/m/MessageToast",
-   "sap/ui/model/json/JSONModel",
-   "home/model/model"
-], function(Controller, MessageToast, JSONModel, oModel) {
+   "home/model/model",
+   "home/util/cosmatic",
+], function(Controller, MessageToast, oModel, cosmatic) {
     'use strict';
 
     return Controller.extend("home.controller.screen2",
@@ -26,7 +26,9 @@ sap.ui.define(
             // Make aware of model to View
             this.getView().setModel(oCModel, "person2"); 
             
-            
+            //Resource model
+            var oRSModel = oModel.createResourceModel();
+            this.getView().setModel(oRSModel, "i18n");            
  
             // Set path to input / screen fields - binding 
 
@@ -64,15 +66,24 @@ sap.ui.define(
 
         onRowSelectionChange: function(oEvent){
             debugger;
-            //step - 1 : Get selected row 
-             var oItem = oEvent.getParameter("rowContext");
-            //step - 2 : Get array path of selected row
-             var sPath = oItem.getPath(); 
-            //step - 3 : Get screen element object ref from the view
-            var oForm = this.getView().byId("idForm"); 
-            //step - 4 : bind element - for the dynamic path
-            oForm.bindElement(sPath); 
-        } 
+            console.log(oEvent);
+
+            //Step - 1 : Get the source 
+            var oRow =  oEvent.getParameter("rowContext");
+            //Step - 2 : Get Path / data source 
+            var sPath = oRow.getPath();
+            //Step - 3 : Get Element reference / object refer 
+            var oForm = this.getView().byId("idForm");
+            //Step - 4 : Using bindElement() method - Set Abosultepath to the screen element 
+            oForm.bindElement(sPath);
+            
+        },
+
+        toUpperCase: function(oInp){
+            if(oInp){
+                return oInp.toUpperCase();
+            }
+        }
 
 
     });

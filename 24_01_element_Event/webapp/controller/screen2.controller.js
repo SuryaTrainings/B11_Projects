@@ -60,19 +60,7 @@ sap.ui.define(
             this.getView().byId("idSGrade").setValue("A");
             this.getView().byId("idSFee").setValue("36000 INR");
             
-        },
-
-        onRowSelectionChange: function(oEvent){
-            debugger;
-            //step - 1 : Get selected row 
-             var oItem = oEvent.getParameter("rowContext");
-            //step - 2 : Get array path of selected row
-             var sPath = oItem.getPath(); 
-            //step - 3 : Get screen element object ref from the view
-            var oForm = this.getView().byId("idForm"); 
-            //step - 4 : bind element - for the dynamic path
-            oForm.bindElement(sPath); 
-        } 
+        }
 
 
     });

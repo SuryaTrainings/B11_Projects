@@ -17,22 +17,14 @@
         "SName" : "Mr A",
         "SMarks" : 500,
         "rating" : 4,
-        "gender" : "M",
-        "grade"   : "A+",
-        "name" : "Mr Abhi",
-        "id"   : "S001A",
-        "fee"  : 22000
+        "gender" : "M"
     }, {
         "SNO" : 2,
         "SId" : "S002",
         "SName" : "Mr B",
         "SMarks" : 250,
         "rating" : 4,
-        "gender" : "N",
-        "grade"   : "B+",
-        "name" : "Mr Basha",
-        "id"   : "S002B",
-        "fee"  : 25000
+        "gender" : "N"
 
     }, {
         "SNO" :3,
@@ -40,22 +32,14 @@
         "SName" : "Mr C",
         "SMarks" : 490,
         "rating" : 5,
-        "gender" : "O",
-        "grade"   : "C+",
-        "name" : "Mr Chandra",
-        "id"   : "S003c",
-        "fee"  : 24000
+        "gender" : "O"
     }, {
         "SNO" :4,
         "SId" : "S004",
         "SName" : "Mr D",
         "SMarks" : 349,
         "rating" : 1,
-        "gender" : "M",
-        "grade"   : "D+",
-        "name" : "Mr Dhoni",
-        "id"   : "S004D",
-        "fee"  : 28000
+        "gender" : "M"
 
 
     }, {
@@ -64,11 +48,7 @@
         "SName" : "Mr E",
         "SMarks" : 490,
         "rating" : 3,
-        "gender" : "F",
-        "grade"   : "E+",
-        "name" : "Mr Esha",
-        "id"   : "S005E",
-        "fee"  : 20000
+        "gender" : "F"
 
 
     }, {
@@ -77,11 +57,7 @@
         "SName" : "Mr F",
         "SMarks" : 351,
         "rating" : 1,
-        "gender" : "M",
-        "grade"   : "F+",
-        "name" : "Mr Firoj",
-        "id"   : "S006F",
-        "fee"  : 26000
+        "gender" : "M"
 
     }]   
                             }
