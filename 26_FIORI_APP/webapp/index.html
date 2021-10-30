@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Bootstrap area  -->
+    <script 
+            src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js" 
+            data-sap-ui-theme="sap_belize"
+            data-sap-ui-libs="sap.m" 
+            data-sap-ui-resourceroots='{
+                                        "home": "./"
+                                    }'
+            data-sap-ui-compatVersion='edge'
+    >
+
+            </script>
+
+    <script>
+        var oComponent = new sap.ui.core.ComponentContainer({
+            name: "home"
+        });
+
+        oComponent.placeAt("content");
+
+    </script>
+
+</head>
+
+<body id="content">
+</body>
+
+</html>

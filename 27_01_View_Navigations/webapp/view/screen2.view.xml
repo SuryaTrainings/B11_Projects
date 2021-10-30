@@ -1,0 +1,11 @@
+<mvc:View xmlns:mvc = "sap.ui.core.mvc"
+          xmlns = "sap.m"
+          controllerName = "home.controller.screen2">
+          <Page title="Detail page" showNavButton="true" navButtonPress="onBack">
+          <headerContent>
+          <Button  icon="sap-icon://arrow-left" press=".onBack"></Button>
+          
+          </headerContent>
+          </Page>
+
+</mvc:View>    

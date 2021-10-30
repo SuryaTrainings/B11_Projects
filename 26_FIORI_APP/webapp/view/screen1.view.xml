@@ -1,0 +1,64 @@
+<mvc:View xmlns:mvc = "sap.ui.core.mvc"
+          xmlns     = "sap.m"
+          controllerName="home.controller.screen1">
+          <Page title="Intro Screen">
+          <headerContent>
+            <Button text="Screen2" icon="sap-icon://action" press="onNext"></Button>
+          </headerContent>
+          
+          <content>
+          <SearchField id="idSearch"></SearchField>
+          <List id="idList">
+            <items>
+                <DisplayListItem value="Computer Science Engineering" label="CSE"/>
+                <DisplayListItem value="Electronics and communication Engineering" label="ECE"/>
+                <DisplayListItem value="Electorinc and electiral engineering" label="EEE"/>
+                <DisplayListItem value="Information technology" label="IT"/>
+
+                <StandardListItem title="JNTU University" description="Best University in India" 
+                    icon="sap-icon://action">
+                </StandardListItem>
+
+                
+                <StandardListItem title="IIT" description="World best colleges" 
+                    icon="sap-icon://action">
+                </StandardListItem>
+
+                <InputListItem>
+                    <HBox>
+                        <Label text="Best private universit to study" />
+                        <Input />
+                    </HBox>
+                </InputListItem>
+
+                <CustomListItem>
+                    <Label text="Any colleges providing distance education"/>
+                    <Switch ></Switch>
+                </CustomListItem>
+
+                <ObjectListItem title="4 Semistes" intro="Fee Perticulars"
+                 icon="" number="1" numberUnit="60000">
+                    <attributes>
+                        <ObjectAttribute text="Fee INR 60000/-, 6 Months" title="Semister 1"/>
+                        <ObjectAttribute text="Fee INR 75000/-, 6 Months" title="Semister 2"/>
+                        <ObjectAttribute text="Fee INR 50000/-, 6 Months" title="Semister 3"/>
+                        <ObjectAttribute text="Fee INR 30000/-, 4 Months" title="Semister 4"/>
+                    </attributes>
+
+                    <firstStatus>
+                        <!-- <ObjectStatus text="Admissions closed" state="Error"></ObjectStatus>
+                        <ObjectStatus text="Seats avaliable" state="Success"></ObjectStatus> -->
+                        <ObjectStatus text="Very limited seats" state="Warning"></ObjectStatus>
+                    </firstStatus>
+                </ObjectListItem>
+
+                 <FeedListItem icon="sap-icon://male" sender="Student 1" text="Best college is GITHAM University"
+                 timestamp="20 Jan 2020"></FeedListItem>
+                
+
+                <ActionListItem press="onItemClick" text="Download collegee details"></ActionListItem>
+             </items>
+          </List>  
+          </content>
+          </Page>
+    </mvc:View>          

@@ -1,0 +1,18 @@
+<mvc:View xmlns:mvc = "sap.ui.core.mvc"
+          xmlns     = "sap.m"
+          controllerName="home.controller.screen2">
+               <Page title="Detailed Screen" showNavButton="true" navButtonPress="onBack">
+               <headerContent>
+                   <Button text="Screen1" icon="sap-icon://action" press="onBack"></Button>
+               </headerContent>
+
+               <footer>
+                <Toolbar >
+                <ToolbarSpacer ></ToolbarSpacer>
+                <Button text="General Admission" type="Reject"></Button>
+                <Button text="Managment Admission" type="Emphasized"></Button>
+                
+                </Toolbar>
+               </footer>
+    </Page>
+</mvc:View> 
