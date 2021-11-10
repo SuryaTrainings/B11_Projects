@@ -1,0 +1,79 @@
+<mvc:View xmlns:table="sap.ui.table" xmlns:mvc = "sap.ui.core.mvc"
+          xmlns = "sap.m"
+          controllerName = "home.controller.screen1">
+          <Page title="Overview page">
+
+            <headerContent>
+                <Button  icon="sap-icon://arrow-right" press=".onNext"></Button>
+            </headerContent>
+            <content>
+            
+                <DisplayListItem label="Type of Cars" value="Luxary cars, Passgenr cars, Racing Cars" ></DisplayListItem>
+                <DisplayListItem label="Type of Bikes" value="Luxary Bikes, Passgenr Bikes, Racing Bikes, Gear less,  Gear bikes" ></DisplayListItem>
+            
+                <StandardListItem title="Maruthi cars" 
+                icon="sap-icon://action"
+                description="Range strats from 4 Laks"
+                ></StandardListItem>
+
+                <InputListItem>
+                    <HBox>
+                        <Label text="Enter your dream car name" />
+                        <Input />
+                        <Switch />
+                    </HBox>
+                
+                </InputListItem>
+
+                <table:Table rows="{/Students}">
+                <table:columns>
+                    <table:Column>
+                        <Label text="{i18n>SNO}"></Label>
+                            <table:template>
+                                <Text text="{SNo}"></Text>
+                            </table:template>
+                    </table:Column>
+                    <table:Column>
+                        <Label text="{i18n>SID}"></Label>
+                            <table:template>
+                                <Text text="{SId}"></Text>
+                            </table:template>
+                    </table:Column>
+                    <table:Column>
+                        <Label text="{i18n>SName}"></Label>
+                            <table:template>
+                                <Text text="{SName}"></Text>
+                            </table:template>
+                    </table:Column>
+                    <table:Column>
+                        <Label text="{i18n>SClass}"></Label>
+                            <table:template>
+                                <Text text="{SClass}"></Text>
+                            </table:template>
+                    </table:Column>
+                    <table:Column>
+                        <Label text="{i18n>SMarks}"></Label>
+                            <table:template>
+                                <Text text="{SMarks}"></Text>
+                            </table:template>
+                    </table:Column>
+                </table:columns>
+                </table:Table>
+
+                <List items="{/Students}">
+                    <items>
+                        <StandardListItem title="{SName}" description="{SId} {SClass} {SMarks}"></StandardListItem>
+                    </items>
+                </List>
+            </content>
+
+            <footer>
+                <Toolbar>
+                    <ToolbarSpacer ></ToolbarSpacer>
+                    <Button text="Book Tickets"></Button>
+                    <Button text="Cancel Tickets"></Button>
+                </Toolbar>
+            </footer>
+          </Page>
+    
+</mvc:View>    

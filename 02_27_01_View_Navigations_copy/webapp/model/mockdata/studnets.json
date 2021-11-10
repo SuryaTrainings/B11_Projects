@@ -1,0 +1,40 @@
+{
+    "Students":[
+        {
+            "SNo" :1,
+            "SId" : "S001",
+            "SName" : "Mr A",
+            "SClass" : "10th",
+            "SMarks" : 499
+
+        },{
+            "SNo" :1,
+            "SId" : "S001",
+            "SName" : "Mr A",
+            "SClass" : "10th",
+            "SMarks" : 499
+
+        },{
+            "SNo" :1,
+            "SId" : "S001",
+            "SName" : "Mr A",
+            "SClass" : "10th",
+            "SMarks" : 499
+
+        },{
+            "SNo" :1,
+            "SId" : "S001",
+            "SName" : "Mr A",
+            "SClass" : "10th",
+            "SMarks" : 499
+
+        },{
+            "SNo" :1,
+            "SId" : "S001",
+            "SName" : "Mr A",
+            "SClass" : "10th",
+            "SMarks" : 499
+
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run 02_28_01_manifest_copy.json",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/02_28_01_manifest_copy.json/node_modules/@sap/html5-repo-mock/index.js",
+      "cwd": "${workspaceFolder}/02_28_01_manifest_copy.json",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_flat_run_config_handler_id\",\"runnableId\":\"/home/user/projects/B11SAPUI5FIORI/02_28_01_manifest_copy.json\"}"
+      },
+      "args": [
+        "--standalone",
+        "/home/index.html",
+        "--ui5",
+        "{\"version\":\".\"}"
+      ],
+      "envFile": "${workspaceFolder}/02_28_01_manifest_copy.json/.env3",
+      "preLaunchTask": "Build 02_28_01_manifest_copy.json"
+    }
+  ]
+}
